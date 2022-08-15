@@ -25,9 +25,45 @@ class ColorSelectionPage extends StatelessWidget {
           ],
         ),
         // https://colorhunt.co/
-        body: (const Center(
-          child: Text(
-              "SingleChildScrollView -> Column -> [ColorPalette, ColorPalette] "),
+        body: (Center(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                ColorPalette(
+                  baseColor: '293462', 
+                  baseColor1: '1CD6CE',
+                  baseColor2: 'FEDB39',
+                  baseColor3: 'D61C4E', 
+                  callback: showColor
+                ),
+                ColorPalette(
+                  baseColor: '42032C',
+                  baseColor1: 'D36B00',
+                  baseColor2: 'E6D2AA',
+                  baseColor3: 'F1EFDC',
+                  callback: showColor
+                ),
+                ColorPalette(
+                  baseColor: '100F0F',
+                  baseColor1: '0F3D3E',
+                  baseColor2: 'E2DCC8',
+                  baseColor3: 'F1F1F1',
+                  callback: showColor
+                ),
+                ColorPalette(
+                  baseColor: 'FCE2DB',
+                  baseColor1: 'FF8FB1',
+                  baseColor2: 'B270A2',
+                  baseColor3: '7A4495',
+                  callback: showColor),
+                ColorPalette(
+                  baseColor: 'FEFBF6',
+                  baseColor1: 'A6D1E6',
+                  baseColor2: '7F5283',
+                  baseColor3: '3D3C42',
+                  callback: showColor),
+            ],)
+          )
         )));
   }
 

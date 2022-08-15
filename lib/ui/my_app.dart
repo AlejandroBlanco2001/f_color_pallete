@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // vamos a usar GetMaterialApp para pdoer usar un diálogo sin context
     return GetMaterialApp(
+      title: 'Taller colores',
       theme: ThemeData(
         brightness: Brightness.light,
         primarySwatch: ColorUtils.CreateMaterialColor('5F7161'),
